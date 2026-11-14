@@ -4,8 +4,8 @@
 class Golem < Formula
   desc "Personal AI agent that runs on your own machine"
   homepage "https://github.com/MilanPavel/golem"
-  url "https://github.com/MilanPavel/golem/releases/download/v0.13.1/golem-0.13.1-darwin-arm64.tar.gz"
-  sha256 "52acc83afda05f17fd82412c362ee7f81d439dfdaa32e840b0423d37f4a2f2b5"
+  url "https://github.com/MilanPavel/golem/releases/download/v0.14.0/golem-0.14.0-darwin-arm64.tar.gz"
+  sha256 "1d35b113b3e0c9fafa914bdd3b2c0b635eb9a577a7584c8726dbd3154a071371"
 
   depends_on arch: :arm64
   depends_on :macos
@@ -24,10 +24,10 @@ class Golem < Formula
   # for every install. Two owners would start two daemons.
   def caveats
     <<~EOS
-      Run golem to chat in the terminal,
-      or golem web to set up in your browser.
-      After `brew upgrade golem`, press Ctrl-R in golem or run `golem daemon restart`
-      to restart its service and the web page. `golem web` restarts the page too.
+      Run golem to set up in your browser,
+      or golem tui to chat in the terminal.
+      After `brew upgrade golem`, press Ctrl-R in golem tui or run `golem daemon restart`
+      to restart its service and the web page. `golem` restarts the page too.
       Before `brew uninstall golem`, remove them:
         golem uninstall
       Chats and settings stay in ~/.golem.
