@@ -4,8 +4,8 @@
 class Golem < Formula
   desc "Personal AI agent that runs on your own machine"
   homepage "https://github.com/MilanPavel/golem"
-  url "https://github.com/MilanPavel/golem/releases/download/v0.20.0/golem-0.20.0-darwin-arm64.tar.gz"
-  sha256 "d6766c103e9e39a8399baefead6be47ed6702a4ab59a09089fd99f475c16b88b"
+  url "https://github.com/MilanPavel/golem/releases/download/v0.21.0/golem-0.21.0-darwin-arm64.tar.gz"
+  sha256 "f51273baafc23ae25a1ef532edd2b06f3ece8139513070a40e8a01ac37cf2391"
 
   depends_on arch: :arm64
   depends_on :macos
